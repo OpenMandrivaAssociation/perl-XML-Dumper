@@ -17,7 +17,6 @@ Buildrequires:	perl-devel
 BuildRequires:	perl(XML::Parser)
 BuildRequires:	perl(Compress::Zlib)
 BuildArch: 	noarch
-BuildRoot:	%{_tmppath}/%{name}-%{version}
 
 %description
 Perl module for dumping Perl objects from/to XML.
