@@ -3,7 +3,7 @@
 
 Name:       perl-%{upstream_name}
 Version:    %perl_convert_version %{upstream_version}
-Release:    4
+Release:    5
 
 Summary:	Perl module for dumping Perl objects from/to XML
 License:	GPL
@@ -24,13 +24,10 @@ Perl module for dumping Perl objects from/to XML.
 
 %build
 %{__perl} Makefile.PL INSTALLDIRS=vendor
-%make
-
-%check
-%{__make} test
+%make+build
 
 %install
-%{makeinstall_std}
+%make_install
 
 %files
 %doc README Changes
@@ -39,7 +36,7 @@ Perl module for dumping Perl objects from/to XML.
 
 
 %changelog
-* Wed Aug 05 2009 Jérôme Quelin <jquelin@mandriva.org> 0.810.0-1mdv2010.0
+* Wed Aug 05 2009 JÃ©rÃ´me Quelin <jquelin@mandriva.org> 0.810.0-1mdv2010.0
 + Revision: 410100
 - rebuild using %%perl_convert_version
 
@@ -56,7 +53,7 @@ Perl module for dumping Perl objects from/to XML.
 - rebuild
 
 
-* Wed May 03 2006 Nicolas L�cureuil <neoclust@mandriva.org> 0.81-2mdk
+* Wed May 03 2006 Nicolas Lécureuil <neoclust@mandriva.org> 0.81-2mdk
 - Fix According to perl Policy
 	- BuildRequires
 
@@ -74,7 +71,7 @@ Perl module for dumping Perl objects from/to XML.
 * Mon Jun 20 2005 Rafael Garcia-Suarez <rgarciasuarez@mandriva.com> 0.74-1mdk
 - 0.74
 
-* Thu Jun 03 2004 Per �yvind Karlsen <peroyvind@linux-mandrake.com> 0.71-1mdk
+* Thu Jun 03 2004 Per Øyvind Karlsen <peroyvind@linux-mandrake.com> 0.71-1mdk
 - 0.71
 - drop prefix and distribution tag
 - drop redundant requires
@@ -83,11 +80,11 @@ Perl module for dumping Perl objects from/to XML.
 * Fri Dec 19 2003 Michael Scherer <misc@mandrake.org> 0.67-3mdk
 - Fix BuildRequires ( perl-Compress-Zlib )
 
-* Mon Sep 01 2003 Fran�ois Pons <fpons@mandrakesoft.com> 0.67-2mdk
+* Mon Sep 01 2003 François Pons <fpons@mandrakesoft.com> 0.67-2mdk
 - fixed requires on /usr/local/bin/perl.
 - using %%makeinstall_std.
 
-* Wed Aug 27 2003 Fran�ois Pons <fpons@mandrakesoft.com> 0.67-1mdk
+* Wed Aug 27 2003 François Pons <fpons@mandrakesoft.com> 0.67-1mdk
 - 0.67.
 
 * Tue May 27 2003 Thierry Vignaud <tvignaud@mandrakesoft.com> 0.4-6mdk
