@@ -24,7 +24,7 @@ Perl module for dumping Perl objects from/to XML.
 
 %build
 %{__perl} Makefile.PL INSTALLDIRS=vendor
-%make+build
+%make_build
 
 %install
 %make_install
