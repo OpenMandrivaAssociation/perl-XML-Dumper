@@ -8,7 +8,7 @@ Release:    6
 Summary:	Perl module for dumping Perl objects from/to XML
 License:	GPL
 Group:		Development/Perl
-Url:		http://search.cpan.org/dist/%{upstream_name}/
+Url:		https://search.cpan.org/dist/%{upstream_name}/
 Source0:	ftp://ftp.perl.org/pub/CPAN/modules/by-module/XML/%{upstream_name}-%{upstream_version}.tar.gz
 
 Buildrequires:	perl-devel
