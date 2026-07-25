@@ -2,14 +2,14 @@
 %define	upstream_version 0.81
 
 Name:       perl-%{upstream_name}
-Version:    %perl_convert_version %{upstream_version}
-Release:    6
+Version:    %{upstream_version}
+Release:    7
 
 Summary:	Perl module for dumping Perl objects from/to XML
 License:	GPL
 Group:		Development/Perl
-Url:		https://search.cpan.org/dist/%{upstream_name}/
-Source0:	ftp://ftp.perl.org/pub/CPAN/modules/by-module/XML/%{upstream_name}-%{upstream_version}.tar.gz
+Url:		https://metacpan.org/dist/XML-Dumper
+Source0:	https://cpan.metacpan.org/authors/id/M/MI/MIKEWONG/XML-Dumper-%{upstream_version}.tar.gz
 
 BuildRequires:	make
 Buildrequires:	perl-devel
