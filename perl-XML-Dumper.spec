@@ -1,15 +1,13 @@
 %define	upstream_name	 XML-Dumper
-%define	upstream_version 0.81
-
 Name:       perl-%{upstream_name}
-Version:    %{upstream_version}
-Release:    7
+Version:    0.81
+Release:    8
 
 Summary:	Perl module for dumping Perl objects from/to XML
 License:	GPL
 Group:		Development/Perl
 Url:		https://metacpan.org/dist/XML-Dumper
-Source0:	https://cpan.metacpan.org/authors/id/M/MI/MIKEWONG/XML-Dumper-%{upstream_version}.tar.gz
+Source0:	https://cpan.metacpan.org/authors/id/M/MI/MIKEWONG/XML-Dumper-%{version}.tar.gz
 
 BuildRequires:	make
 Buildrequires:	perl-devel
@@ -21,7 +19,7 @@ BuildArch: 	noarch
 Perl module for dumping Perl objects from/to XML.
 
 %prep
-%setup -q -n %{upstream_name}-%{upstream_version}
+%setup -q -n %{upstream_name}-%{version}
 
 %build
 %{__perl} Makefile.PL INSTALLDIRS=vendor
@@ -39,9 +37,7 @@ Perl module for dumping Perl objects from/to XML.
 %changelog
 * Wed Aug 05 2009 JÃ©rÃ´me Quelin <jquelin@mandriva.org> 0.810.0-1mdv2010.0
 + Revision: 410100
-- rebuild using %%perl_convert_version
-
-* Wed Jul 23 2008 Thierry Vignaud <tvignaud@mandriva.com> 0.81-5mdv2009.0
+- rebuild using %0.81 Wed Jul 23 2008 Thierry Vignaud <tvignaud@mandriva.com> 0.81-5mdv2009.0
 + Revision: 242199
 - rebuild
 - kill re-definition of %%buildroot on Pixel's request
