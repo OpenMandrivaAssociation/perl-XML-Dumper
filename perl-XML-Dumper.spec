@@ -2,7 +2,7 @@
 %define upstream_version 0.81
 Name:       perl-%{upstream_name}
 Version:	0.81
-Release:	2
+Release:	3
 
 Summary:	Perl module for dumping Perl objects from/to XML
 License:	GPL
@@ -23,7 +23,7 @@ Perl module for dumping Perl objects from/to XML.
 %setup -q -n XML-Dumper-0.81
 
 %build
-%{__perl} Makefile.PL INSTALLDIRS=vendor
+perl Makefile.PL INSTALLDIRS=vendor
 %make_build
 
 %install
