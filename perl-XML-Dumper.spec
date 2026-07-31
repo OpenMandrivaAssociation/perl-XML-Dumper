@@ -2,7 +2,7 @@
 %define upstream_version 0.81
 Name:       perl-%{upstream_name}
 Version:	0.81
-Release:	10
+Release:	11
 
 Summary:	Perl module for dumping Perl objects from/to XML
 License:	GPL
