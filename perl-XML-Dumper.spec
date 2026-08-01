@@ -3,7 +3,7 @@
 
 Name:		perl-%{upstream_name}
 Version:	0.81
-Release:	3
+Release:	4
 Summary:	Perl module for dumping Perl objects from/to XML
 License:	GPL+
 Group:		Development/Perl
